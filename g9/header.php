@@ -59,7 +59,7 @@
     <nav class="navbar">  
         <ul>  
             <li><a href="index.php">首页</a></li>  
-            <li><a href="#">第九组内容</a></li>  
+            <li><a href="#">测试内容</a></li>  
         </ul>  
     </nav>  
 
