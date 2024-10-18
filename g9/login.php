@@ -62,7 +62,9 @@ $valid_password = 'password';
   
 $username = $_POST['username'];  
 $password = $_POST['password'];  
-  
+
+// select username from user where username=$username;
+
 if ($username == $valid_username && $password == $valid_password) {  
     echo '登录成功！';  
 } else {  
