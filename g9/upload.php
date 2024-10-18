@@ -68,7 +68,7 @@ include "header.php";
 if(isset($_POST["submit"])) {  
     $targetDirectory = "uploads/";
     $targetFile = $targetDirectory . basename($_FILES["fileToUpload"]["name"]);
-    $uploadOk = 1; // 用于标记上传是否成功  
+    $uploadOk = 1; 
     $imageFileType = strtolower(pathinfo($targetFile,PATHINFO_EXTENSION));
   
    
