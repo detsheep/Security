@@ -66,29 +66,28 @@ include "header.php";
 </html>
 <?php  
 if(isset($_POST["submit"])) {  
-    $targetDirectory = "uploads/"; // 保存上传文件的目录  
-    $targetFile = $targetDirectory . basename($_FILES["fileToUpload"]["name"]); // 上传文件的完整路径  
+    $targetDirectory = "uploads/";
+    $targetFile = $targetDirectory . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1; // 用于标记上传是否成功  
-    $imageFileType = strtolower(pathinfo($targetFile,PATHINFO_EXTENSION)); // 获取上传文件的扩展名  
+    $imageFileType = strtolower(pathinfo($targetFile,PATHINFO_EXTENSION));
   
-  
-    // 检查文件是否已存在  
+   
     if (file_exists($targetFile)) {  
-        echo "对不起，文件已存在."; // 这里可以添加更多的处理逻辑  
+        echo "对不起，文件已存在.";
         $uploadOk = 0;  
     }  
   
   
-    // 检查是否有错误发生  
+ 
     if ($uploadOk == 0) {  
-        echo "对不起，文件未被上传."; // 这里可以添加更多的处理逻辑  
+        echo "对不起，文件未被上传."; 
     } else {  
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile)) {  
             echo "文件 ". basename( $_FILES["fileToUpload"]["name"]). " 已经被成功上传."; // 这里可以添加更多的处理逻辑，比如将文件信息保存到数据库等操作。  
         } else {  
-            echo "对不起，上传文件时发生错误."; // 这里可以添加更多的处理逻辑，比如重新尝试上传等操作。  
+            echo "对不起，上传文件时发生错误."; 
         }  
     }  
 } else {  
-    echo "请上传文件"; // 如果用户没有选择要上传的文件，显示此提示信息。  
+    echo "请上传文件";
 }?>
