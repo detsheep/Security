@@ -16,8 +16,10 @@ INSERT INTO food (name, price) VALUES ('Apple', 0.50);
 INSERT INTO food (name, price) VALUES ('Banana', 0.25);  
 INSERT INTO food (name, price) VALUES ('Orange', 0.75);
 
-INSERT INTO user (username, password) VALUES ('zyy', 'zyy');  
-INSERT INTO user (username, password) VALUES ('zxw', 'zxw');  
-INSERT INTO user (username, password) VALUES ('yf', 'yf');
+INSERT INTO user (username, password) VALUES ('zs', 'zs');  
+INSERT INTO user (username, password) VALUES ('ls', 'ls');  
+INSERT INTO user (username, password) VALUES ('ww', 'ww');
+INSERT INTO user (username, password) VALUES ('zl', 'zl');
+INSERT INTO user (username, password) VALUES ('lb', 'lb');
 INSERT INTO user (username, password) VALUES ('admin', 'admin');
 
